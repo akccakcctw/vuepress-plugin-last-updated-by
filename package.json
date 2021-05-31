@@ -1,5 +1,5 @@
 {
-  "name": "vuepress-plugin-last-updated-by",
+  "name": "@akccakcctw/vuepress-plugin-last-updated-by",
   "version": "0.1.0",
   "description": "last-updated plugin for vuepress",
   "main": "index.js",
@@ -14,5 +14,14 @@
   "license": "MIT",
   "dependencies": {
     "cross-spawn": "^7.0.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akccakcctw/vuepress-plugin-last-updated-by.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akccakcctw/vuepress-plugin-last-updated-by/issues"
+  },
+  "homepage": "https://github.com/akccakcctw/vuepress-plugin-last-updated-by#readme"
 }
