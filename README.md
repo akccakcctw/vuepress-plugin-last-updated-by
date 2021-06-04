@@ -1,22 +1,31 @@
 # @akccakcctw/vuepress-plugin-last-updated-by
 
-## Usage
+> vuepress plugin to display last author of files
 
-Install package from npm:
+[![Npm build badge](https://img.shields.io/npm/v/@akccakcctw/vuepress-plugin-last-updated-by.svg?style=flat-square)](https://www.npmjs.com/package/@akccakcctw/vuepress-plugin-last-updated-by)
+
+## Install 
 
 ```sh
 $ npm install -D @akccakcctw/vuepress-plugin-last-updated-by
 ```
 
-Then add `@akccakcctw/vuepress-plugin-last-updated-by` to `plugins` in your vuepress config.js.
+## Usage
+
+Add `@akccakcctw/vuepress-plugin-last-updated-by` to `plugins` in your vuepress **config.js**.
 
 ```javascript
-/**
- * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
- */
-plugins: [
-  '@vuepress/plugin-back-to-top',
-  '@vuepress/plugin-medium-zoom',
-  '@akccakcctw/vuepress-plugin-last-updated-by', // add this line
-],
+// config.js
+
+module.exports = {
+  plugins: [
+    '@akccakcctw/vuepress-plugin-last-updated-by', // add this line
+  ],
+}
+```
+
+It will add `lastUpdatedBy` to your `$page`, can be access like
+
+```javascript
+console.log($page.lastUpdatedBy); // "akccakcctw"
 ```
